@@ -10,10 +10,11 @@
 <body>
 <div id="app">
     <input type="text" id="name" name="name"/>
+    <input type="text" id="name2" name="name"/>
     <button class="button">Add</button>
 </div>
 <script>
-    var inputElement = document.getElementById('name');
+    var inputElement = document.getElementsByTagName('input')[0];
     console.log(inputElement);
 </script>
 </body>
