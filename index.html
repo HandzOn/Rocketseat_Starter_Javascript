@@ -9,12 +9,11 @@
 </head>
 <body>
 <div id="app">
-    <input type="text" id="name" name="name"/>
-    <input type="text" id="name2" name="name"/>
+    <input type="text" id="name" name="name" class="name"/>
     <button class="button">Add</button>
 </div>
 <script>
-    var inputElement = document.getElementsByTagName('input')[0];
+    var inputElement = document.getElementsByClassName('name');
     console.log(inputElement);
 </script>
 </body>
