@@ -13,8 +13,13 @@
     <button class="button">Add</button>
 </div>
 <script>
-    var inputElement = document.querySelector("div#app input[name='name']");
-    console.log(inputElement);
+    var inputElement = document.querySelector("input[name='name']");
+    var buttonElement = document.querySelector('button.button');
+
+    buttonElement.onclick = function() {
+      var text = inputElement.value;
+      alert(text);
+    }
 </script>
 </body>
 </html>
