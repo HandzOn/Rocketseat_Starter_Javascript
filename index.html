@@ -10,18 +10,10 @@
 <body>
 
 <script>
-
-  function returnsSex(sex) {
-    switch (sex) {
-      case 'M': return 'Male';
-      case 'F': return 'Female';
-      default: return 'Other';
-    }
+  var sex = 'M', age = 27;
+  if (sex === 'M' && age >= 18) {
+    console.log('OK');
   }
-
-  var result = returnsSex('F');
-  console.log(result);
-
 </script>
 </body>
 </html>
