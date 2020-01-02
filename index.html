@@ -9,21 +9,14 @@
 </head>
 <body>
 <div id="app">
-    <input type="text" id="name">
+    <div class="box"></div>
 </div>
 <script>
-    var linkElement = document.createElement('a');
-    linkElement.setAttribute('href', 'https://github.com/guiireal');
-    linkElement.setAttribute('title', 'Meu github');
-
-    var textElement = document.createTextNode('Acessar site');
-    linkElement.appendChild(textElement);
-
-    var container = document.getElementById('app');
-    container.appendChild(linkElement);
-
-    var inputElement = document.getElementById('name');
-    container.removeChild(inputElement);
+    var boxElement = document.querySelector('.box');
+    boxElement.style.setProperty('width', '100px');
+    boxElement.style.height = '100px';
+    boxElement.style.backgroundColor = '#F00';
+    // boxElement.style.setProperty('backgroundColor', '#F00');
 </script>
 </body>
 </html>
