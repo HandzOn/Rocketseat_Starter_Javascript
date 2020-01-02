@@ -9,12 +9,12 @@
 </head>
 <body>
 <div id="app">
-    <input onkeypress="showAlert()">
+    <input type="text" id="name" name="name"/>
+    <button class="button">Add</button>
 </div>
 <script>
-  function showAlert() {
-    alert('Button has been clicked');
-  }
+    var inputElement = document.getElementById('name');
+    console.log(inputElement);
 </script>
 </body>
 </html>
