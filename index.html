@@ -9,16 +9,21 @@
 </head>
 <body>
 <div id="app">
-
+    <input type="text" id="name">
 </div>
 <script>
     var linkElement = document.createElement('a');
     linkElement.setAttribute('href', 'https://github.com/guiireal');
     linkElement.setAttribute('title', 'Meu github');
+
     var textElement = document.createTextNode('Acessar site');
     linkElement.appendChild(textElement);
+
     var container = document.getElementById('app');
     container.appendChild(linkElement);
+
+    var inputElement = document.getElementById('name');
+    container.removeChild(inputElement);
 </script>
 </body>
 </html>
