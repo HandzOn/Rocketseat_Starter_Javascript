@@ -1,16 +1,7 @@
-var myPromise = function () {
-  return new Promise(function (resolve, reject) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET','https://api.github.com/users/guiireal');
-    xhr.send(null);
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        resolve(JSON.parse(xhr.responseText));
-      }
-    }
-
+axios.get('https://api.github.com/users/guiireal')
+  .then(function (response) {
+    console.log(response);
   })
-};
-
-myPromise().then(response => console.log(response));
+  .catch(function (error) {
+    console.warn(error);
+  });
