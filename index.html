@@ -5,18 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curso JavaScript</title>
+    <title>JavaScript Course</title>
 </head>
 <body>
 
 <script>
 
-  function sum(number1, number2) {
-    var result = number1 + number2;
-    return result;
+  function returnsSex(sex) {
+    if (sex === 'M') {
+        return 'Male';
+    } else if (sex === 'F') {
+      return 'Female';
+    } else {
+      return 'Other';
+    }
   }
 
-  var result = sum(1, 2);
+  var result = returnsSex('M');
   console.log(result);
 
 </script>
