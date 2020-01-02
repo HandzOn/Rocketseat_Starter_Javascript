@@ -9,17 +9,15 @@
 </head>
 <body>
 <div id="app">
-    <input type="text" name="name"/>
-    <button class="button">Add</button>
+
 </div>
 <script>
-    var inputElement = document.querySelector("input[name='name']");
-    var buttonElement = document.querySelector('button.button');
-
-    buttonElement.onclick = function() {
-      var text = inputElement.value;
-      alert(text);
-    }
+    var linkElement = document.createElement('a');
+    linkElement.setAttribute('href', 'https://github.com/guiireal');
+    var textElement = document.createTextNode('Acessar site');
+    linkElement.appendChild(textElement);
+    var container = document.getElementById('app');
+    container.appendChild(linkElement);
 </script>
 </body>
 </html>
